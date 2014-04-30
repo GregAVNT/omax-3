@@ -1,0 +1,2 @@
+//Nav bar code: 
+function detectJQ(){window.jQuery?console.log():window.setTimeout(detectJQ(),100)}function jqRun(){$(function(){var e=$("#header");$(window).scroll(function(){var e=$(window).scrollTop();e>=80?alert("scroll down"):alert("scroll up")})})}detectJQ();

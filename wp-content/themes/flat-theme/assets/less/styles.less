@@ -1,16 +1,18 @@
-@import url(bootstrap.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Merriweather:400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-/* custom tif styles */
+/* custom omax styles */
 
-.raleway {
-font-family: 'Raleway', sans-serif;
+@omaxgreen: #74a434;
+@omaxorange: #f58f16;
+@omaxdarkgray: #4a4a4a;
+
+.rounded{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
-
 
 .boxshadow-top {
 box-shadow: 1px 10px 10px 2px rgba(84,84,84,0.2);
@@ -48,5 +50,22 @@ border-radius: none;
 @import "styles-lg.less";
 
 
-@silver: #f4f5f7;
+//Navigation
+.navbar .navbar-main > li:focus > a,
+.navbar .navbar-main > li:active > a,
+.navbar .navbar-main > li:hover > a,
+.navbar .navbar-main > li.active > a,
+.navbar .navbar-main > li.active:hover > a,
+.navbar .navbar-main > li.open > a,
+.navbar .navbar-main > li.open:hover > a {
+  background-color: @omaxgreen;
+  color: #fff;
+}
+.navbar .navbar-main .dropdown-menu {
+  background-color: @omaxgreen;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  margin-top: -3px;
+}
 

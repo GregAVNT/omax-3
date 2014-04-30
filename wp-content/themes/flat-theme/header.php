@@ -14,12 +14,14 @@
 <?php wp_head(); ?>
 </head><!--/head-->
 
-<body <?php body_class() ?>>
+<body data-spy="scroll" data-target="#header" <?php body_class() ?>>
   <?php if(zee_option('zee_theme_layout')=='boxed'){ ?>
     <div id="boxed">
   <?php } ?>
-
+  
   <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  	<!--<div class="container preheader" style="height:26px; background-color:#ccc;">
+  	</div>-->
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
