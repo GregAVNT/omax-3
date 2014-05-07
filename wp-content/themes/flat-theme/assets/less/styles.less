@@ -2,12 +2,31 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
+
 /* custom omax styles */
 
 @omaxgreen: #74a434;
 @omaxorange: #f58f16;
 @omaxdarkgray: #4a4a4a;
-
+body{
+	padding-top:0px;
+}
+.faderade {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.emerald {
+	background-color:@omaxgreen;
+}
+.center{
+	text-align: center;
+}
+.middle{
+	float: middle;
+}
 .rounded{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -44,13 +63,20 @@ box-shadow: 1px 10px 10px 2px rgba(84,84,84,0.2);
 border-radius: none;
 }
 
-@import "styles-xs.less";
-@import "styles-sm.less";
-@import "styles-md.less";
-@import "styles-lg.less";
-
 
 //Navigation
+#header,#header.affix-top{
+	.faderade;
+	background-color:rgb(255,255,255,);
+	background-color:rgba(255,255,255,.1);
+}
+#header.affix{
+	.faderade;
+	background-color:rgb(255,255,255,);
+	background-color:rgba(255,255,255,1);
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
+	
+}
 .navbar .navbar-main > li:focus > a,
 .navbar .navbar-main > li:active > a,
 .navbar .navbar-main > li:hover > a,
@@ -61,6 +87,20 @@ border-radius: none;
   background-color: @omaxgreen;
   color: #fff;
 }
+.navbar{
+	.navbar-main > li:last-child > a {
+		background-color: @omaxorange;
+		color: #fff;
+	}
+}
+.navbar-inverse .navbar-nav>li a{
+	color:@omaxdarkgray;
+}
+.navbar{
+	.navbar-main{
+		margin-top:35px;
+	}
+}
 .navbar .navbar-main .dropdown-menu {
   background-color: @omaxgreen;
   box-shadow: none;
@@ -68,4 +108,125 @@ border-radius: none;
   padding: 0;
   margin-top: -3px;
 }
+//carousel
+
+div.carousel-content.centered.left{
+	h2,p{
+		color:@omaxdarkgray;
+	}
+	width:50%;
+	margin-left:50%;
+}
+#main-slider .carousel .btn{
+	.rounded;
+	background:@omaxorange;
+	padding:10px;
+	text-align: center;
+	border:none;
+}
+#main-slider .carousel .btn:hover{
+	.rounded;
+	background:@omaxorange;
+	padding:10px;
+	text-align: center;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+//content sections
+
+.omax{
+	h3,h4,p,span{
+		text-align: center;
+		font-weight: 400;
+	}
+	h3,h4{
+		font-weight:300;
+	}
+	h3{
+		font-size: 30px;
+	}
+	h4{
+		font-size: 24px;
+	}
+	
+}
+//buttons
+
+.btn.green{
+	background:@omaxgreen;
+	color:white;
+}
+.btn.orange{
+	background:@omaxorange;
+	color:white;
+}
+.btn.orange:hover, .btn.green:hover{
+	background:@omaxdarkgray;
+	color:white;
+}
+
+//icons
+
+.omax .icon{
+	width:100%;
+	&.quality{
+		
+	}
+}
+//testimonial
+.testimonial{
+	padding:0 10%;
+	blockquote{
+		position:relative;
+		border-left:none;
+		background:@omaxgreen;
+		color:#fff;
+		margin-bottom:60px;
+		.rounded;
+		.designation{
+		color:@omaxdarkgray;
+			position:absolute;
+			bottom:-35px;
+		}
+		&::before {
+			color: @omaxgreen;
+			color: rgba(255,255,255,0.1);
+			content: open-quote;
+			font-size: 4em;
+			line-height: 0.1em;
+			margin-right: 0.25em;
+			vertical-align: -0.4em;
+}
+		&::after{
+			content:"";
+			position:absolute;
+			bottom:-30px;
+			left:40px;
+			height:0;
+			width:0;
+			border-top:15px solid @omaxgreen;
+			border-left:15px solid transparent;
+			border-right:15px solid transparent;
+			border-bottom:15px solid transparent;
+		}
+	}
+	
+}
+//footer
+p.fda{
+	font-size: 10px;
+	text-align: center;
+	margin-top:15px;
+}
+.media{
+//	margin-top:7px;
+	//margin-bottom:7px;
+	//border-top:1px solid white;
+}
+@import "styles-xs.less";
+@import "styles-sm.less";
+@import "styles-md.less";
+@import "styles-lg.less";
+@import "styles-subs.less";
 

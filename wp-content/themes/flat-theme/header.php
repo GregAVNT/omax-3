@@ -19,7 +19,7 @@
     <div id="boxed">
   <?php } ?>
   
-  <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="10">
   	<!--<div class="container preheader" style="height:26px; background-color:#ccc;">
   	</div>-->
     <div class="container">
