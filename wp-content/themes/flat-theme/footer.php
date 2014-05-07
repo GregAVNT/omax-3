@@ -37,6 +37,7 @@
         </ul>
       </div>
     </div>
+    <div class='row'><p class='fda'>†These statements have not been evaluated by the US Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p></div>
   </div>
 </footer><!--/#footer-->
 

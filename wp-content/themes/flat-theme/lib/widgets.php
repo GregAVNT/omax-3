@@ -28,8 +28,8 @@ class Zee_Recent_Posts_Widget extends WP_Widget {
         foreach ($posts as $key => $value) {
             ?>
             <div class="media">
-                <div class="pull-left">
-                    <?php echo get_the_post_thumbnail( $value->ID, array(64,64) ); ?>
+                <div class="pull-right">
+                    <?php echo get_the_post_thumbnail( $value->ID, array(32,32) ); ?>
                 </div>
                 <div class="media-body">
                     <span class="media-heading"><a href="<?php echo get_permalink( $value->ID ); ?>"><?php echo $value->post_title; ?></a></span>

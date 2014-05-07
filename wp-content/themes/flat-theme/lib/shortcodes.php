@@ -239,7 +239,7 @@ add_shortcode( 'zee_testimonial', function( $atts, $content= null ){
     <?php foreach ($posts as $key => $post) {
 
       ?>
-      <div class="col-sm-6">
+      <div class="col-xs-12 testimonial">
         <blockquote>
           <?php echo do_shortcode( $post->post_content ); ?>
           <small class="designation"><?php echo get_post_meta($post->ID, 'testimonial_designation',true)   ?></small>
@@ -598,7 +598,7 @@ add_shortcode( 'zee_pricing', function( $atts, $content = null ){
       <?php foreach ($pricings as $key => $value) { ?>
       <?php $featured = get_post_meta($value->ID, 'pricing_featured',true); ?>
 
-      <div class="col-lg-<?php echo round(12/count($pricings)); ?>">
+      <div class="col-md-<?php echo round(12/count($pricings)); ?>">
 
         <ul class="plan<?php echo ($featured==1)? ' featured' : ''; ?>">
           <li class="plan-name">
