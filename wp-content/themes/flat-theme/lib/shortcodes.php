@@ -197,7 +197,7 @@ add_shortcode( 'zee_service', function( $atts, $content= null ){
         <div class="col-sm-<?php echo (12/$column); ?>">
           <div class="media services">
             <?php if( $icon ) { ?>
-            <div class="pull-left">
+            <div class="pull-center">
               <i style="background-color:<?php echo  $color ?>;" class="<?php echo $icon; ?> icon-md"></i>
             </div>
             <?php } ?>

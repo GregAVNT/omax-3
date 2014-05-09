@@ -32,6 +32,16 @@ body{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
+.cover{
+	background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size:cover;
+}
+.mega{
+	font-size: 36px;
+	
+}
 
 .boxshadow-top {
 box-shadow: 1px 10px 10px 2px rgba(84,84,84,0.2);
@@ -73,7 +83,7 @@ border-radius: none;
 #header.affix{
 	.faderade;
 	background-color:rgb(255,255,255,);
-	background-color:rgba(255,255,255,1);
+	background-color:rgba(255,255,255,.97);
 	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
 	
 }
@@ -134,9 +144,12 @@ div.carousel-content.centered.left{
 }
 
 //content sections
-
+.omax > .container{
+	border-bottom:1px solid #cccccc;
+}
 .omax{
-	h3,h4,p,span{
+	
+	h3,h4,h5,p,span{
 		text-align: center;
 		font-weight: 400;
 	}
@@ -146,8 +159,15 @@ div.carousel-content.centered.left{
 	h3{
 		font-size: 30px;
 	}
+	h3.media-heading{
+		font-size:24px;
+	}
 	h4{
 		font-size: 24px;
+	}
+	h5{
+		font-size: 21px;
+		margin-top:-15px;
 	}
 	
 }
@@ -156,6 +176,8 @@ div.carousel-content.centered.left{
 .btn.green{
 	background:@omaxgreen;
 	color:white;
+	display:block;
+	margin:10px 40px;
 }
 .btn.orange{
 	background:@omaxorange;
@@ -223,6 +245,39 @@ p.fda{
 //	margin-top:7px;
 	//margin-bottom:7px;
 	//border-top:1px solid white;
+}
+.pull-center{
+margin:10px 0px;
+	
+}
+[class^="icon-"], [class*=" icon-"]{
+	margin:0px auto;
+}
+
+//Sections
+.aligncenter{
+	margin:5px auto;
+}
+img.size-full{
+	max-width:none;
+}
+//Endorsements
+.endorse-container{
+	height:300px;
+}
+.maroon{
+	background:url('assets/images/maroon_bg.jpg')top center no-repeat;
+	.cover;
+	
+}
+//graphs
+.graph-omax{
+	float:left;
+	min-width:46%;
+	margin:2%;
+	min-height:200px;
+	background-color:@omaxgreen;
+	
 }
 @import "styles-xs.less";
 @import "styles-sm.less";
