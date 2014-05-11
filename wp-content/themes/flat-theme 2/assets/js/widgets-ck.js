@@ -1,0 +1,1 @@
+jQuery(function(e){function t(t){imgurl=e("img",t).attr("src");imgurl||(imgurl=e(t).attr("src"));e("#"+window.adcode_id).val(imgurl);tb_remove()}e(".upload-button").live("click",function(n){window.adcode_id=e(n.target).attr("rel");window.send_to_editor=t;tb_show("","media-upload.php?type=image&amp;amp;amp;TB_iframe=true");return!1})});

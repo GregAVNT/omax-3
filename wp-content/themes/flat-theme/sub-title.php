@@ -72,7 +72,7 @@ if( is_single() ) {
 
 echo (isset($title) ? '
 
-    <section id="title" class="emerald" data-subtitle="'.$title.'")">
+    <section id="title" class="emerald">
     <div class="container">
     <div class="row">
     <div class="col-sm-6">
