@@ -1,1 +1,339 @@
-@import url(bootstrap.min.css);@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Merriweather:400,400italic,700,700italic);@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);.raleway{font-family:'Raleway',sans-serif}.boxshadow-top{box-shadow:1px 10px 10px 2px rgba(84,84,84,0.2);-webkit-box-shadow:1px 10px 10px 2px rgba(84,84,84,0.2);-moz-box-shadow:1px 10px 10px 2px rgba(84,84,84,0.2)}.one-edge-shadow{-webkit-box-shadow:0 3px 0 0 rgba(84,84,84,0.1);-moz-box-shadow:0 3px 0 0 rgba(84,84,84,0.1);box-shadow:0 3px 0 0 rgba(84,84,84,0.1)}.transparent-btn{zoom:1;filter:alpha(opacity=80);opacity:.8}.transparent-btn-over{zoom:1;filter:alpha(opacity=100);opacity:1}.no-radius{-webkit-border-radius:none;-moz-border-radius:none;border-radius:none}.container,.navbar-static-top .container,.navbar-fixed-top .container,.navbar-fixed-bottom .container{width:100%}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* custom omax styles */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.faderade {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.emerald {
+  background-color: #74a434;
+}
+.center {
+  text-align: center;
+}
+.middle {
+  float: middle;
+}
+.rounded {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+.mega {
+  font-size: 36px;
+  text-align: center;
+}
+.navbar-toggle {
+  background: #74a434;
+}
+.boxshadow-top {
+  box-shadow: 1px 10px 10px 2px rgba(84, 84, 84, 0.2);
+  -webkit-box-shadow: 1px 10px 10px 2px rgba(84, 84, 84, 0.2);
+  -moz-box-shadow: 1px 10px 10px 2px rgba(84, 84, 84, 0.2);
+}
+.one-edge-shadow {
+  -webkit-box-shadow: 0 3px 0 0 rgba(84, 84, 84, 0.1);
+  -moz-box-shadow: 0 3px 0 0 rgba(84, 84, 84, 0.1);
+  box-shadow: 0 3px 0 0 rgba(84, 84, 84, 0.1);
+}
+.transparent-btn {
+  zoom: 1;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.transparent-btn-over {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.no-radius {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+#header,
+#header.affix-top {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#header.affix {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-main > li:focus > a,
+.navbar .navbar-main > li:active > a,
+.navbar .navbar-main > li:hover > a,
+.navbar .navbar-main > li.active > a,
+.navbar .navbar-main > li.active:hover > a,
+.navbar .navbar-main > li.open > a,
+.navbar .navbar-main > li.open:hover > a {
+  background-color: #74a434;
+  color: #fff;
+}
+.navbar .navbar-main > li:last-child > a {
+  background-color: #f58f16;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li a {
+  color: #4a4a4a;
+}
+.navbar .navbar-main {
+  margin-top: 27px;
+}
+.navbar .navbar-main .dropdown-menu {
+  background-color: #74a434;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  margin-top: -3px;
+}
+div.carousel-content.centered.left {
+  width: 50%;
+  margin-left: 50%;
+}
+div.carousel-content.centered.left h2,
+div.carousel-content.centered.left p {
+  color: #4a4a4a;
+}
+#main-slider .carousel .btn {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #f58f16;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+#main-slider .carousel .btn:hover {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #f58f16;
+  padding: 10px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.omax > .container {
+  border-bottom: 1px solid #cccccc;
+}
+.omax h3,
+.omax h4,
+.omax h5,
+.omax p,
+.omax span {
+  text-align: center;
+  font-weight: 400;
+}
+.omax h3,
+.omax h4 {
+  font-weight: 300;
+}
+.omax h3 {
+  font-size: 30px;
+}
+.omax h3.media-heading {
+  font-size: 24px;
+}
+.omax h4 {
+  font-size: 24px;
+}
+.omax h5 {
+  font-size: 21px;
+  margin-top: -15px;
+}
+.omax.leftwise h3,
+.omax.leftwise h4,
+.omax.leftwise h5,
+.omax.leftwise p,
+.omax.leftwise span {
+  text-align: left;
+  font-weight: 400;
+}
+.btn.green {
+  background: #74a434;
+  color: white;
+  display: block;
+  margin: 10px 40px;
+}
+.btn.orange {
+  background: #f58f16;
+  color: white;
+}
+.btn.orange:hover,
+.btn.green:hover {
+  background: #4a4a4a;
+  color: white;
+}
+.btn.primary {
+  background: #74a434;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.omax .icon {
+  width: 100%;
+}
+.testimonial {
+  padding: 0 10%;
+}
+.testimonial blockquote {
+  position: relative;
+  border-left: none;
+  background: #74a434;
+  color: #fff;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.testimonial blockquote .designation {
+  color: #4a4a4a;
+  position: absolute;
+  bottom: -35px;
+}
+.testimonial blockquote::before {
+  color: #74a434;
+  color: rgba(255, 255, 255, 0.1);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.testimonial blockquote::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 40px;
+  height: 0;
+  width: 0;
+  border-top: 15px solid #74a434;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+p.fda {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+.pull-center {
+  margin: 10px 0px;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  margin: 0px auto;
+}
+.aligncenter {
+  margin: 5px auto;
+}
+img.size-full {
+  max-width: none;
+}
+.endorse-container {
+  height: 300px;
+}
+.maroon {
+  background: url('assets/images/maroon_bg.jpg') top center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+.graph-omax {
+  float: left;
+  min-width: 46%;
+  margin: 2%;
+  min-height: 200px;
+  background-color: #74a434;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 100%;
+}
+/* end X-Small devices */
+/* Small devices (tablets, 768px and up) */
+/* end Small devices */
+/* Medium devices (desktops, 992px and up) */
+/* end Medium devices */
+/* Large devices (large desktops, 1200px and up) */
+/* end Large devices */
+.datasub {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+[data-subtitle] {
+  background: #4a4a4a;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+[data-subtitle="About omax3"] {
+  background: url('http://i.istockimg.com/file_thumbview_approve/28748742/2/stock-photo-28748742-young-man-exercising-outdoors.jpg') center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+[data-subtitle="About omax3"] {
+  background: url('http://monikadung.files.wordpress.com/2013/04/fat-molecule.jpg') center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+[data-subtitle="Benefits"] {
+  background: url('http://i.istockimg.com/file_thumbview_approve/19298096/2/stock-photo-19298096-feeling-that-determination-to-win.jpg') top center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+[data-subtitle="Benefits"] h1,
+[data-subtitle="Benefits"] p {
+  color: #4a4a4a;
+}
+.sectionheader {
+  padding: 30px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+}
+.sectionheader .left {
+  padding-left: 50%;
+}
+.sectionheader .right {
+  padding-right: 50%;
+}
+[data-sectionheader="body"] {
+  background: url('http://i.istockimg.com/file_thumbview_approve/19298096/2/stock-photo-19298096-feeling-that-determination-to-win.jpg') center center no-repeat;
+}

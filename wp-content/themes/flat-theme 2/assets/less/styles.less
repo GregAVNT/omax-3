@@ -6,10 +6,12 @@
 /* custom omax styles */
 
 @omaxgreen: #74a434;
+@omaxdarkgreen: #4f781b;
 @omaxorange: #f58f16;
 @omaxdarkgray: #4a4a4a;
 body{
 	padding-top:0px;
+	padding-bottom:0px;
 }
 .faderade {
   -webkit-transition: all 0.25s ease-in-out;
@@ -40,7 +42,11 @@ body{
 }
 .mega{
 	font-size: 36px;
+	text-align: center;
 	
+}
+.navbar-toggle{
+	background:@omaxgreen;
 }
 
 .boxshadow-top {
@@ -108,7 +114,7 @@ border-radius: none;
 }
 .navbar{
 	.navbar-main{
-		margin-top:35px;
+		margin-top:27px;
 	}
 }
 .navbar .navbar-main .dropdown-menu {
@@ -149,7 +155,7 @@ div.carousel-content.centered.left{
 }
 .omax{
 	
-	h3,h4,h5,p,span{
+	h2,h3,h4,h5,p,span{
 		text-align: center;
 		font-weight: 400;
 	}
@@ -171,6 +177,12 @@ div.carousel-content.centered.left{
 	}
 	
 }
+.omax.leftwise{
+	h3,h4,h5,p,span{
+		text-align: left;
+		font-weight: 400;
+	}
+}
 //buttons
 
 .btn.green{
@@ -187,7 +199,18 @@ div.carousel-content.centered.left{
 	background:@omaxdarkgray;
 	color:white;
 }
-
+.btn-primary{
+	background:@omaxgreen;
+	padding:15px;
+	font-weight:400;
+	border:none;
+	&:hover{
+		background:@omaxdarkgreen;
+	}
+}
+.physician-menu{
+	margin-top:-50px;
+}
 //icons
 
 .omax .icon{
