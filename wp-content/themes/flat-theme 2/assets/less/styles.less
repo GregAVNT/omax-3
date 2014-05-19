@@ -8,6 +8,7 @@
 @omaxgreen: #74a434;
 @omaxdarkgreen: #4f781b;
 @omaxorange: #f58f16;
+@omaxdarkorange: #d77300;
 @omaxdarkgray: #4a4a4a;
 body{
 	padding-top:0px;
@@ -219,6 +220,15 @@ div.carousel-content.centered.left{
 		
 	}
 }
+
+//buttons
+
+.btn {
+	white-space: normal !important;
+}
+
+
+
 //testimonial
 .testimonial{
 	padding:0 10%;
@@ -281,6 +291,9 @@ margin:10px 0px;
 .aligncenter{
 	margin:5px auto;
 }
+li.faq .media .media-body{
+	text-align: left;
+}
 img.size-full{
 	max-width:none;
 }
@@ -301,6 +314,20 @@ img.size-full{
 	min-height:200px;
 	background-color:@omaxgreen;
 	
+}
+.pricing-tables{
+	.plan{
+		background:@omaxdarkgray;
+	}
+	.plan.featured{
+		background:@omaxdarkgray;
+		.btn-primary{
+			background:@omaxorange;
+			&:hover{
+				background:@omaxdarkorange;
+			}
+		}
+	}
 }
 @import "styles-xs.less";
 @import "styles-sm.less";

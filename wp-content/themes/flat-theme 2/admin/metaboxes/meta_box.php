@@ -88,7 +88,6 @@ function custom_meta_box_field( $field, $meta = null, $repeatable = null ) {
 					echo '<li><label class="label">' . $label . '</label></li>';
 					echo '<li class="display-icon"><i class="'.$meta.'"></i></li>';
 
-
 					echo '<li><input type="text" class="hidden-textbox" name="' . esc_attr( $name ) . '" value="' . $meta . '" /></li>';
 
 

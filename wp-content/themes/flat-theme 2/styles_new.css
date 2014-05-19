@@ -205,6 +205,9 @@ div.carousel-content.centered.left p {
 .omax .icon {
   width: 100%;
 }
+.btn {
+  white-space: normal !important;
+}
 .testimonial {
   padding: 0 10%;
 }
@@ -259,6 +262,9 @@ p.fda {
 .aligncenter {
   margin: 5px auto;
 }
+li.faq .media .media-body {
+  text-align: left;
+}
 img.size-full {
   max-width: none;
 }
@@ -278,6 +284,18 @@ img.size-full {
   margin: 2%;
   min-height: 200px;
   background-color: #74a434;
+}
+.pricing-tables .plan {
+  background: #4a4a4a;
+}
+.pricing-tables .plan.featured {
+  background: #4a4a4a;
+}
+.pricing-tables .plan.featured .btn-primary {
+  background: #f58f16;
+}
+.pricing-tables .plan.featured .btn-primary:hover {
+  background: #d77300;
 }
 .container,
 .navbar-static-top .container,
@@ -318,16 +336,24 @@ img.size-full {
   -moz-background-size: cover;
 }
 [data-subtitle="Your Practice + omax3"] {
-  background: url('assets/images/bg_doctor.png') center center no-repeat;
+  background: url('assets/images/bg_doctor2.png') center center no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -ms-background-size: cover;
   -moz-background-size: cover;
 }
+[data-subtitle="Your Practice + omax3"] .container > .row > .col-sm-6 {
+  float: right !important;
+}
 [data-subtitle="Your Practice + omax3"] h1,
 [data-subtitle="Your Practice + omax3"] p {
   color: #4a4a4a;
-  margin-left: 50%;
+}
+[data-subtitle="Your Practice + omax3"] .breadcrumb {
+  display: none;
+}
+.physician-menu .container .row .btn-lg {
+  white-space: none !important;
 }
 [data-subtitle="Benefits"] {
   background: url('http://i.istockimg.com/file_thumbview_approve/19298096/2/stock-photo-19298096-feeling-that-determination-to-win.jpg') top center no-repeat;
